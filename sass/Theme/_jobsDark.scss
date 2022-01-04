@@ -1,0 +1,12 @@
+.darkMode {
+  .jobs {
+    background-color: $color-dark-6;
+    .jobs__content {
+      .jobs__item {
+        h6 {
+          color: $color-dark-5;
+        }
+      }
+    }
+  }
+}

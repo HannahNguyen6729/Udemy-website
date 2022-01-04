@@ -1,0 +1,16 @@
+.darkMode {
+  .sidebarMini {
+    background-color: $color-dark-2;
+    color: $color-white-0;
+    .button {
+      background-color: $color-dark-2;
+    }
+    .sidebarMini__content {
+      .slider {
+        &::before {
+          background-color: $color-dark-1 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.banner {
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-white-0;
+  background: url(../../img/udemy-logo-semi-transparent.svg) 0/30% no-repeat,
+    linear-gradient(60deg, $color-purple, $color-blue-0 40%);
+  background-blend-mode: overlay;
+}

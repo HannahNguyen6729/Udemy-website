@@ -1,0 +1,55 @@
+.darkMode {
+  .myNavBar {
+    background-color: $color-dark-4;
+    .myNavBar__left {
+      .navbar-brand {
+        .logoDark {
+          display: none;
+        }
+        .logoWhite {
+          display: inline-block;
+        }
+      }
+      .myNavBar__categories {
+        @include styleText($color-dark-3, $fs-1, $fw-0);
+      }
+      .myNavBar__form-search {
+        @include searchForm(
+          $color-dark-2,
+          $color-dark-3,
+          $color-dark-1,
+          $color-dark-1
+        );
+      }
+    }
+    .myNavBar__right {
+      .navbar-nav {
+        .nav-item {
+          &:hover {
+            background-color: $color-dark-0;
+          }
+          .nav-link {
+            @include styleText($color-dark-3, $fs-1, $fw-0);
+          }
+          .overlay {
+            background-color: $color-dark-2;
+            &::before {
+              background-color: $color-dark-2;
+            }
+          }
+        }
+        .myNavBar__button {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        .myNavBar__shopping-cart {
+          line-height: 24px;
+          .nav-link {
+            padding-left: $pd-1 - 3;
+          }
+        }
+      }
+    }
+  }
+}

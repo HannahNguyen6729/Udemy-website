@@ -1,0 +1,36 @@
+.jobs {
+  text-align: center;
+  background-color: $color-white-cream;
+  padding-bottom: $pd-3;
+  margin-bottom: $mg-2;
+  .jobs__content {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    .jobs__item {
+      padding: $pd-0 $pd-4;
+      h6 {
+        font-weight: $fw-1;
+      }
+    }
+    .jobs__item--left {
+      border-right: 1px solid $color-black-1;
+    }
+  }
+  @media screen and (max-width: 879px) {
+    .jobs__content {
+      flex-wrap: wrap;
+      .jobs__item {
+        width: 100%;
+        border-right: none;
+      }
+    }
+  }
+  @media screen and (min-width: 880px) {
+    .jobs__content {
+      .jobs__item {
+        width: 50%;
+      }
+    }
+  }
+}

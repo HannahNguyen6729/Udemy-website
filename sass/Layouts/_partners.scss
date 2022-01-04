@@ -1,0 +1,40 @@
+.partners {
+  //margin-bottom: $mg-1;
+  background-color: $color-white-cream;
+  text-align: center;
+
+  .partners__content {
+    width: 70%;
+    margin: 0 auto;
+    padding: $pd-0 0 $mg-1 + 5 0;
+    h5 {
+      padding: $mg-2 0;
+    }
+    .partners__images {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include responsive("extra-large") {
+    .partners__content {
+      width: 80%;
+    }
+  }
+  @include responsive("large") {
+    .partners__content {
+      width: 90%;
+    }
+  }
+  @include responsive("medium") {
+    .partners__content {
+      width: 65%;
+      .partners__images {
+        flex-wrap: wrap;
+        .partners__item {
+          width: 50%;
+          margin-bottom: $pd-0;
+        }
+      }
+    }
+  }
+}

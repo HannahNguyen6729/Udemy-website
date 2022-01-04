@@ -1,0 +1,14 @@
+.categories {
+  .categories__content {
+    width: 90%;
+    margin: 0 auto;
+    .categories__item {
+      padding: $pd-0 $pd-1;
+      margin-bottom: $mg-2 - 5;
+      border: 1px solid $color-gray-2;
+      i {
+        padding-right: $pd-0;
+      }
+    }
+  }
+}

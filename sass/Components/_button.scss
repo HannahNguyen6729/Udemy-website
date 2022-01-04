@@ -1,0 +1,28 @@
+.button--white {
+  @include styleButton(
+    $color-black-light,
+    $color-white-cream,
+    $color-black-1,
+    $fs-0,
+    $fw-2,
+    $pd-2,
+    $pd-0
+  );
+  &:hover {
+    @include hoverButton($color-white-0, $color-black-0, $color-black-0);
+  }
+}
+.button--red {
+  @include styleButton(
+    $color-white-0,
+    $color-red-0,
+    $color-red-0,
+    $fs-0,
+    $fw-2,
+    $pd-2,
+    $pd-0
+  );
+  &:hover {
+    @include hoverButton($color-red-0, $color-white-0, $color-red-0);
+  }
+}

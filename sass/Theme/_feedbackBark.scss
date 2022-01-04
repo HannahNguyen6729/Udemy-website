@@ -1,0 +1,17 @@
+.darkMode {
+  .students {
+    // background-color: $color-dark-0;
+    .students__content {
+      h4 {
+        color: $color-dark-5;
+      }
+      .students__feedback {
+        .card__top--right {
+          p {
+            color: $color-dark-5;
+          }
+        }
+      }
+    }
+  }
+}

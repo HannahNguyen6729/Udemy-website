@@ -1,0 +1,53 @@
+.course {
+  margin: $mg-2 0;
+  .course__content {
+    width: 90%;
+    margin: 0 auto;
+    .course__left {
+      display: flex;
+      align-items: center;
+      background-color: $color-white-cream;
+    }
+
+    .myNavTab {
+      .nav-item {
+        .nav-link {
+          border: none;
+          &.active {
+            border-bottom: 4px solid $color-blue-0;
+          }
+        }
+      }
+    }
+  }
+  @include responsive("screen-1") {
+    .course__content {
+      .course__right {
+        .course__owl-carousel {
+          .card {
+            h6 {
+              @include styleText($color-black-0, $fs-0 - 1, $fw-2);
+            }
+            p {
+              @include styleText($color-black-0, $fs-0 - 2, $fw-0);
+            }
+            .card__price {
+              span {
+                font-size: $fs-1 + 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive("medium") {
+    .course__content {
+      .course__left {
+        h6 {
+          margin-top: $mg-2;
+        }
+      }
+    }
+  }
+}

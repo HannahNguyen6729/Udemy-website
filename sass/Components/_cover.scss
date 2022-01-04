@@ -1,0 +1,33 @@
+.cover {
+  background-image: url(../img/cover.jpg);
+  @extend .backgroundImg;
+  color: $color-white-0;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  .cover__content {
+    padding-left: 10%;
+    max-width: 620px;
+    h1 {
+      @include styleText($color-white-0, $fs-2, $fw-3);
+    }
+    p {
+      @include styleText($color-white-0, $fs-3, $fw-0);
+    }
+    .cover__form-search {
+      @include searchForm(
+        $color-white-cream,
+        $color-black-light,
+        $color-white-0,
+        $color-white-0
+      );
+    }
+  }
+
+  @include responsive("small") {
+    .cover__content {
+      max-width: 450px;
+      padding-left: 8%;
+    }
+  }
+}

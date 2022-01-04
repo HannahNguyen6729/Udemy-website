@@ -1,0 +1,53 @@
+.sidebarMini {
+  transform: translateX(100%);
+  transition: all 0.5s;
+  background-color: $color-gray-2;
+  width: 120px;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  z-index: 10;
+  .button {
+    background-color: $color-gray-2;
+    border-radius: $border-radius + 3 0 0 $border-radius + 3;
+    position: fixed;
+    transform: translateX(-35px);
+    transition: all 0.5s;
+    padding: $pd-2 $pd-0;
+    cursor: pointer;
+  }
+  .sidebarMini__content {
+    .sidebarMini__item {
+      .switch {
+        margin: 0 $pd-0;
+        #checkbox {
+          display: none;
+          &:checked + .slider {
+            &::before {
+              transform: translateX(23px);
+            }
+          }
+        }
+        .slider {
+          cursor: pointer;
+          background-color: $color-white-0;
+          width: 40px;
+          height: 17px;
+          border-radius: $border-radius-1;
+          &::before {
+            content: "";
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            display: block;
+            background-color: $color-gray-0;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+  &.is-opened {
+    transform: translateX(0%);
+  }
+}

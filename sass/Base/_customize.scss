@@ -1,0 +1,26 @@
+.owl-carousel {
+  .owl-nav {
+    button {
+      &.owl-next,
+      &.owl-prev {
+        @include styleText($color-blue-0, $fs-5, $fw-0);
+        background-color: $color-white-0;
+        box-shadow: 0 2px 9px 3px $color-gray-2;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        &:hover {
+          background-color: $color-gray-2;
+        }
+      }
+      &.owl-next {
+        right: -30px;
+      }
+      &.owl-prev {
+        left: -30px;
+      }
+    }
+  }
+}
